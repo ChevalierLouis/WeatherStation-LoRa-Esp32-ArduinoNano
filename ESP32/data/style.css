@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box; 
+}
+h1{
+  text-align: center;
+  background-color: #130748;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+}
+.app {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #130748;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.card {
+  width: 300px;
+  height: 380px;
+  position: relative;
+  margin: 20px;
+  background: radial-gradient( 140% 140% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100% );
+  border-top: 1px solid #eeeded70;
+  border-left: 1px solid #eeeded70;
+  border-radius: 30px;
+  box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.content .icon {
+  width: 60px;
+  margin: 20px 0 0px;
+}
+.content .temp {
+  position: relative;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.content .temp .celsius {
+  position: absolute;
+  top: 40px; left: 130px;
+  right: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+.card .city {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+}
